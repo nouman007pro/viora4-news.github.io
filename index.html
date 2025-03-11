@@ -18,6 +18,35 @@
            background: #1E3A8A;
            margin: 20px 0;
   }
+
+        @media (max-width: 768px) {
+    .cover-container,
+    .cover-containerr,
+    .coverr-container {
+        height: 15vh; /* Reduce height for mobile */
+        margin-bottom: 1rem;
+        width: 100% !important; /* Force full width on mobile */
+    }
+
+    .cover-title {
+        font-size: 1.5rem; /* Smaller text for mobile */
+        line-height: 1.2; /* Better text spacing */
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.5); /* Adjust shadow */
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .cover-container,
+    .cover-containerr,
+    .coverr-container {
+        height: 18vh;
+    }
+
+    .cover-title {
+        font-size: 2rem;
+    }
+}
         .cover-container {
             height: 20vh;
             position: relative;
